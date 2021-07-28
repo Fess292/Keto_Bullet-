@@ -1,0 +1,405 @@
+.header
+    
+    background: #fff
+    height: 78px
+    padding-top: 21px
+    .container
+        text-align: justify
+
+    &__logo
+        width: 190px
+        display: inline-block
+        
+    &__hamburger
+        width: 31px
+        display: inline-block
+        vertical-align: top
+        margin-top: 16px
+        span
+            display: block
+            background: #000
+            height: 4px
+            width: 100%
+            margin-bottom: 3px
+    &__social, &__menu
+        display: none
+.subheader
+    background: $aqua
+    height: 4px
+    box-shadow: 7.1px 9.7px 10px 0 rgba(53, 176, 177, 0.28)
+    &__menu
+        display: none
+.aside
+    display: none
+.blog
+    &__header
+        margin-top: 10px
+        font-size: 12px
+        color: #767676
+        span
+            // text-decoration: underline
+            a
+                color:#0076cd
+
+            
+                 
+    h1
+        margin-top: 15px
+        font-size: 26px
+        font-weight: bold
+        line-height: 1.15
+        color: $red
+        text-transform: uppercase
+    &__img
+        margin-top: 15px
+    p
+        margin-top: 17px
+    // &__p
+    //     font-style: oblique
+    figure
+        // width: 708px
+        padding: 10px
+        background: #f8f9fc
+        margin-top: 17px
+        margin-bottom: 18px
+        figcaption
+            // margin-top: 6px
+            margin-bottom: 17px
+            text-align: center
+            font-size: 16px
+            
+    .bg
+        background-color: $red
+        font-weight: bold
+        color: #fff
+    &__list
+        margin-top: 9px
+        list-style: none
+        li
+            font-weight: bold
+            font-style: italic
+            padding-left: 16px
+            position: relative
+            margin-top: 14px
+            line-height: 1.2
+            &::before
+                position: absolute
+                content: ''
+                width: 8px
+                height: 8px
+                background: $red
+                left: 2px
+                top: 6px
+                border-radius: 50%
+        
+.autor
+    margin-top: 15px
+    text-align: justify
+    height: 41px
+    border-bottom: 1px solid $aqua
+    
+    &__ava
+        display: inline-block
+        vertical-align: top
+        // margin-top: 3px
+    &__title
+        display: inline-block
+        vertical-align: top
+        font-size: 12px
+    &__autor
+        letter-spacing: -0.3px
+    &__time
+        display: inline-block
+        color: $gray
+        svg
+            width: 11px
+            height: 11px
+    &__eye
+        display: inline-block
+        color: $gray
+        svg
+            width: 11px
+            height: 11px
+
+    &__social
+        display: inline-block
+        vertical-align: top
+        margin-top: 5px
+.doc
+    margin-top: 16px
+    background: $aqua
+    padding: 10px
+    color: #fff
+    text-align: center
+    font-style: italic
+    &__title
+        margin-top: 18px
+        font-weight: bold
+    &__img
+        margin-top: 16px
+    &__descr
+        margin-top: 15px
+.column
+    
+    display: inline-block
+    width: 96%
+    max-width: 345px
+    
+    // margin: 0 10px
+    padding: 24px 15px 0 0
+    border-radius: 3px
+    &__list
+        list-style: none
+    &__wrapper
+        background-color: #f8f9fc
+        padding: 16px 6px 6px 0
+        margin-top: 24px
+        .title
+            text-transform: uppercase
+            text-align: left
+            padding-left: 10px
+            margin-bottom: 10px
+    li
+        font-size: 18px
+        font-weight: bold
+        line-height: 1.5
+        color: #ffffff
+        position: relative
+        &::before
+            position: absolute
+            content: '' 
+            background: #fff
+            width: 6px
+            height: 6px
+            top: 13px
+            transform: translateY(-50%)
+            right: 0px
+            border-radius: 50%
+    &__title
+        font-size: 20px
+        font-weight: bold
+        color: #fff
+        // width: 117px
+        text-align: left
+    &-left
+        background: url('../img/column-left.jpg') no-repeat center/cover
+        background-position: 0 -44px
+        text-align: right
+        height: 327px
+        .column__title
+            padding-left: 35%
+            text-align: right
+
+        li
+            padding-right: 18px
+            &:first-child
+                margin-top: 17px
+    &-right
+        background: url('../img/column-right.jpg') no-repeat center/cover
+        text-align: left
+        padding-left: 15px
+        padding-top: 15px
+        height: 435px
+        .column__title
+            padding-right: 20%
+            text-align: left
+
+        li
+            line-height: 1.3
+            padding-left: 18px
+            padding-right: 43px
+            &:first-child
+                margin-top: 24px
+            &::before
+                left: 0
+                top: 11px
+.arrow
+    margin-top: 14px
+    margin-bottom: 20px
+    background: url('../img/girl.jpg') no-repeat center/cover
+    width: 100%
+    padding: 57px 0
+    &__item
+        margin-left: 40%
+        width: 54px
+        padding: 7px 0
+        // background: $aqua
+        background: rgb(34,193,195)
+        background: linear-gradient(97deg, rgba(34,193,195,0) 0%, rgba(78,185,187,1) 100%)
+        font-size: 7.5px
+        font-weight: bold
+        line-height: 1.6
+        color: #ffffff
+        text-transform: uppercase
+        margin-bottom: 6px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 0
+            height: 0
+            border: 17px solid transparent
+            border-right: 0
+            top: -4px
+            right: -17px
+            border-left-color: #4eb9bb
+        &--big
+            font-size: 8.5px
+            line-height: 1.41
+            padding: 9px 0
+            width: 65px
+            position: relative
+            margin-left: 43%
+            &::before
+                content: ''
+                top: -5px
+                right: -19px
+                position: absolute
+                width: 0
+                height: 0
+                border: 20px solid transparent
+                border-right: 0
+                border-left-color: #4eb9bb
+.keto
+    .title
+        margin-top: 32px
+        text-transform: uppercase
+    &__img
+        margin-top: 15px
+        &--png
+            margin-left: -44px
+        &--mt
+            margin-top: 6px
+.koffe
+    margin-top: 18px
+    figure
+        margin-top: 20px
+        background: none
+        padding: 0 14px
+        text-align: center
+        img
+            border-radius: 3px
+.review
+    background-color: #f8f9fc
+    margin-top: 19px
+    padding-bottom: 22px
+    &--mt
+        margin-top: 7px
+    &__title
+        padding-top: 11px
+        padding-bottom: 6px
+    figure
+        text-align: center
+        padding: 0
+        margin-bottom: 0
+        figcaption
+            margin: 0
+        figure
+            margin-top: 0
+    &__before, &__after
+        max-width: 48%
+        display: inline-block
+        vertical-align: top
+        b
+            font-size: 15px
+    p
+        padding: 0 7px
+    &__img
+        padding: 0 7px
+        margin-top: 16px
+.quote
+    background-color: $aqua
+    color: #fff
+    font-weight: bold
+    padding: 48px 17px 20px 10px
+    position: relative
+    margin-top: 9px
+    &::before
+        content: ''
+        position: absolute
+        width: 39px
+        height: 33px
+        background: url('../img/quotes.png') center/cover no-repeat
+        top: 8px
+        left: 10px
+.comments
+    padding-top: 19px
+    background: #f8f9fc
+    padding-bottom: 40px
+    .container
+        background: #f8f9fc
+    &__card
+        margin-top: 27px
+        &:first-child
+            margin-top: 0
+    &__header
+        text-align: justify
+        &--card
+            font-size: 15px
+    &__title
+        display: inline-block
+    &__social
+        display: inline-block
+        a
+            width: 32px
+            height: 32px
+        svg
+            width: 24px
+            height: 18px
+            margin-top: 7px
+    &__item
+        margin-top: 28px
+    &__ava
+        display: inline-block
+        vertical-align: top
+        width: 45px
+        height: 45px
+        margin-right: 13px
+        opacity: 0.9
+        &:hover
+            opacity: 1
+    &__wrapper
+        display: inline-block
+        width: 79%
+    &__name
+        font-weight: bold
+        display: inline-block
+        margin-right: 15px
+        color: #4b4f54
+    &__date
+        display: inline-block
+        color: #969696
+    &__descr
+        margin-top: 8px
+        font-size: 16px
+        img
+            margin-top: 10px
+        figure
+            padding: 0
+            img
+                max-width: 49%
+                display: inline-block
+    &__footer
+        font-size: 13px
+        line-height: 1.9
+        font-weight: bold
+    &__answer
+        text-decoration: none
+        color: #2f77e4
+        margin-right: 15px
+    &__complaint
+        text-decoration: none
+        color: #4b4f54
+.button
+    margin-bottom: 30px
+
+
+
+
+    
+
+        
+        
+
+
+
